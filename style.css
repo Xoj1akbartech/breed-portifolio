@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    margin: 0;
+}
+header{
+    width: 100%;
+    z-index: 9999;
+    background: transparent;
+    position: absolute;
+    background: url(./img/home-banner.png) no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+/* nav */
+nav .container{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.nav-links{
+    margin-left: 140px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.nav-link{
+    margin-right: 40px;
+    font: 500 14px / 100px "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #05364d;
+    padding: 0px;
+    font-size: 12px;
+    transition: 0.5s;
+}
+.active{
+    color: #efb6df;
+}
+.nav-link:hover{
+    color: #efb6df;
+}
+.dropdown-menu{
+    position: absolute;
+    padding-left: 0;
+}
+.dropdown-link{
+    color: #00000000;
+}
+.dropdown:hover .dropdown-link{
+    color: #000;
+}
+.dropdown:hover .dropdown-item{
+    padding: 15px 30px;
+    width: 170px;
+    transition: 0.5s;
+}
+.dropdown:hover .dropdown-item1{
+    border-bottom: 1px solid #8385862c;
+}
+.dropdown:hover .dropdown-menu{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.dropdown:hover .dropdown-item:hover{
+    background: linear-gradient(to left, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
+}
+.dropdown-item:hover .dropdown-link{
+    color: #fff;
+    font-weight: 500;
+}
+
+.header-text h3{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    margin-top: 70px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.header-text h5{
+    font-size: 30px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+.header-text a{
+    background: linear-gradient(to right, rgb(19, 69, 230) 0%, rgb(237, 35, 159) 51%, rgb(19, 69, 230) 100%) 0% 0% / 200%;
+    padding: 15px 38px;
+    border-radius: 6px;
+    color: #fff;
+}
+.header-text-icons{
+    margin: 48px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 60px;
+}
+.img{
+    margin-right: 16px;
+    width: 30px;
+}
+.header-flex{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.header-img{
+    width: 350px;
+    margin-bottom: -79px;
+    margin-right: 20px;
+}
+     
+.img:hover{
+    animation: a 1s;
+}
+
+@keyframes a{
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.header-text a:hover{
+    background: linear-gradient(to right , rgb(237, 35, 159) , rgb(19, 69, 230) );
+}
+
+.header-div-mini{
+    width: 160px;
+    margin-right: 30px;
+    background-color: #f3f3f3;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #00bcd4;
+}
+
+.header-divs{
+    display: flex;
+    align-items: center;
+}
+
+.about-text{
+    height: 100px;
+}
