@@ -13,9 +13,7 @@ body{
 }
 header{
     width: 100%;
-    z-index: 9999;
     background: transparent;
-    position: absolute;
     background: url(./img/home-banner.png) no-repeat top center;
     background-position: center;
     background-size: cover;
@@ -172,6 +170,79 @@ nav .container{
     align-items: center;
 }
 
+/*  */
+
+.aboutme{
+    margin-top: 50px;
+}
+
+.about-content{
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+}
+
+.about-img{
+    width: 450px;
+    height: 370px;
+}
+
+.about-img img{
+    width: 450px;
+    height: 370px;
+}
+
 .about-text{
-    height: 100px;
+    width: 455px;
+}
+
+.all-top{
+    display: flex;
+    align-items: center;
+}
+
+.all-top h3{
+    color: #888;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.all-top span{
+    width: 80px;
+    height: 4px;
+    background: rgba(237, 35, 159, 0.6);
+    margin-left: 10px;
+    position: relative;
+    -webkit-filter: blur(4px);
+}
+
+.all-title{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 52px;
+    text-transform: capitalize;
+}
+
+.all-text{
+    font-size: 16px;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.about-text a{
+    color: #fff;
+    background: linear-gradient(to right , #1345e6 , #ed239f);
+    border-radius: 5px;
+    padding: 16px 38px;
+    transition:all 0.5s;
+}
+
+.about-text p{
+    margin-bottom: 50px;
+}
+
+.about-text a:hover{
+    background: linear-gradient(to right, #ed239f , #1345e6);
 }
