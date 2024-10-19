@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -15,7 +16,7 @@ header{
     width: 100%;
     background: transparent;
     background: url(./img/home-banner.png) no-repeat top center;
-    background-position: center;
+    background-position: center;    
     background-size: cover;
     min-height: 890px;
     box-sizing: border-box;
@@ -271,6 +272,7 @@ nav .container{
     padding: 60px 30px;
     background-color: #f8faff;
     transition: all 1s ease 0s;
+    box-sizing: content-box;
 }
 
 .card img{
@@ -325,6 +327,11 @@ nav .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: url(./img/testimonial-bg.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    height: 440px;
 }
 
 .tesit-main-content div {
@@ -335,6 +342,11 @@ nav .container{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.tesit-img img{
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 
 .tesit-text h3{
@@ -354,7 +366,7 @@ nav .container{
 }
 
 .tesit h1{
-    margin: 10px 0 90px;
+    margin: 10px;
 }
 
 .tesit ul{
@@ -373,3 +385,203 @@ nav .container{
 .tesit li i{
     color: #ffd804;
 }
+
+/*  */
+
+.portifolio{
+    padding-bottom: 120px;
+}
+
+.portifolio-links a{
+    margin-right: 20px;
+}
+
+
+.portifolio-main-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.pmc-left , .pmc-right{
+    width: 555px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.pmc-main{
+    position: relative;
+    margin-bottom: 30px;
+    transition: 1s;
+}
+
+.pmc-main img{
+    width: 555px;
+}
+
+.pmc-main-small{
+    width: 260px !important;
+}
+
+.pmc-main span{
+    position: absolute;
+    bottom: 40px;
+    left: 80px;  
+    color: #fff;
+    z-index: -1;  
+}   
+
+.pmc-main::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5f30ff;
+    z-index: 10;
+    opacity: .8;
+    display: none;
+    transition: all 1s ease;
+}
+
+.pmc-main:hover::before{
+    display: block;
+    left: 20px;
+    top: 20px;
+}
+
+.pmc-main:hover span{
+    z-index: 999;
+}
+
+/*  */
+
+.blog{
+    padding-bottom: 70px;
+}
+
+.blog-card{
+    width: 350px;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-card-img{
+    width: 350px;
+    overflow: hidden;
+    height: 300px;
+}
+
+.blog-card-img img{
+    width: 350px;
+    height: 300px;
+    transition: 0.4s ease;
+}
+
+.blog-card-content{
+    padding: 32px 30px 37px;
+    background-color: #f8faff;
+    width: 100%;
+    margin-top: -6px;
+    transition: 0.4s ease;
+}
+
+.blog-card-content-top{
+    display: flex;
+    color: #888;
+}
+
+.blog-card-content-top p{
+    margin: -2px 30px 0 15px;
+}
+
+.blog-card a{
+    transition: all 0.3s ease;
+}
+
+.blog-card a:hover{
+    color: #ed239f;
+}
+
+.blog-card h3{
+    font-size: 20px;
+    margin: 4px 0 15px;
+}
+
+.blog-card p{
+    margin-bottom: 16px;
+}
+
+.blog-card a{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.blog-card span{
+    margin-top: 5px;
+    width: 60px;
+    height: 2px;
+    display: block;
+    border-radius: 10px;
+    background: linear-gradient(to right , #1345e6 , #ed239f);
+}
+
+.blog-card:hover .blog-card-img img{
+    transform: scale(1.1);
+}
+
+.blog-card:hover .blog-card-content{
+    background-color: #fff;
+    box-shadow: 1px 1px  30px #b3b0b070;
+}
+
+/*  */
+
+footer{
+    background-image: url(./img/download.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 260px;
+    background-position: right bottom;
+    padding: 80px 0 20px;
+}
+
+.footer-content{
+    text-align: center;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons li{
+    width: 45px;
+    height: 45px;
+    transition: 0.4s ease;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.footer-links{
+    margin: 35px 0 50px;
+}
+
+.footer-links li{
+    color: #fff;
+    margin-right: 40px;
+    font-size: 13px;
+}
+
+.footer-icons li:hover{
+    background: linear-gradient(to right , #1345e6 , #ed239f);
+    color: #fff;
+}
+
