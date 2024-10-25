@@ -18,7 +18,7 @@ header {
     width: 100%;
     background: transparent;
     background: url(./img/home-banner.png) no-repeat top center;
-    background-position: center;
+    background-position: center -25px;
     background-size: cover;
     min-height: 890px;
     box-sizing: border-box;
@@ -165,8 +165,8 @@ nav .container {
 .header-img {
     width: 350px;
     position: absolute;
-    right: 15px;
-    top: -3px;
+    right: 3px;
+    top: 1px;
 }
 
 .img:hover {
@@ -202,6 +202,7 @@ nav .container {
 .header-divs {
     display: flex;
     align-items: center;
+    padding-top: 200px;
 }
 
 /*  */
