@@ -18,10 +18,23 @@ header {
     width: 100%;
     background: transparent;
     background: url(./img/home-banner.png) no-repeat top center;
-    background-position: center -25px;
+    background-position: center top;
     background-size: cover;
     min-height: 890px;
     box-sizing: border-box;
+    position: relative;
+    top: 0;
+    padding-top: 200px;
+}
+
+nav{
+    position: fixed;
+    margin: 0 auto;
+    margin-top: -215px;
+    background: #fff;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 1px 0 10px #aeb9be77;
 }
 
 a {
@@ -44,6 +57,7 @@ nav .container {
     display: flex;
     align-items: center;
     justify-content: start;
+    margin-bottom: -15px;
 }
 
 .nav-links {
@@ -72,43 +86,6 @@ nav .container {
 
 .nav-link:hover {
     color: #efb6df;
-}
-
-.dropdown-menu {
-    position: absolute;
-    padding-left: 0;
-}
-
-.dropdown-link {
-    color: #00000000;
-}
-
-.dropdown:hover .dropdown-link {
-    color: #000;
-}
-
-.dropdown:hover .dropdown-item {
-    padding: 15px 30px;
-    width: 170px;
-    transition: 0.5s;
-}
-
-.dropdown:hover .dropdown-item1 {
-    border-bottom: 1px solid #8385862c;
-}
-
-.dropdown:hover .dropdown-menu {
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-}
-
-.dropdown:hover .dropdown-item:hover {
-    background: linear-gradient(to left, #1345e6 0%, #ed239f 51%, #1345e6 100%);
-    background-size: 200% auto;
-}
-
-.dropdown-item:hover .dropdown-link {
-    color: #fff;
-    font-weight: 500;
 }
 
 .header-text h3 {
@@ -158,7 +135,7 @@ nav .container {
     display: flex;
     align-items: start;
     justify-content: space-between;
-    margin-top: 100px;
+
     position: relative;
 }
 
@@ -636,3 +613,4 @@ footer {
 .main-icon{
     width: 10px;
 }
+
