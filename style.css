@@ -143,11 +143,11 @@ nav .container {
     position: relative;
 }
 
-.header-img {
+.header-img {   
     width: 350px;
     position: absolute;
     right: 3px;
-    top: 24px;
+    top: 24px; 
 }
 
 .img:hover {
@@ -618,3 +618,36 @@ footer {
     width: 10px;
 }
 
+.input-100{
+    width: 100%;
+}
+
+.input-50{
+    width: 49.5%;
+}
+
+.input{
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: solid 1px #888;
+    outline: none;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    color: #fff;
+    background: linear-gradient(to right, #1345e6, #ed239f);
+    border-radius: 5px;
+    padding: 16px 38px;
+    transition: all 0.5s;
+    border: none;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ed239f, #1345e6);
+}
